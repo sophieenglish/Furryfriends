@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="padding-top: 70px">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"><img src="images/furryfriendslogo.svg" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <div class="navbartotheright">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link" href="classes.html">Lessons</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="hotel.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Hotel </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="doghotel.html">Dog Hotel</a> <a class="dropdown-item" href="cathotel.html">Cat Hotel</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<h1 class="bookingtitle">Book Now</h1>
+<div class="bookingcontainer">
+  <div class="booking-box">
+  <div class="booking-left">
+	<div class="input-row">
+					<div class="input-group">
+						<label>Name</label>
+						<input type="text" placeholder="Your name">
+					</div>
+					<div class="input-group">
+						<label>Mobile</label>
+						<input type="text" placeholder="Phone number">
+					</div>
+				</div>
+	
+	<div class="input-row">
+					<div class="input-group">
+						<label>Email</label>
+						<input type="email" placeholder="Your email">
+					</div>
+				<div class="input-group">
+						<label>Pet's Name</label>
+						<input type="text" placeholder="Type here">
+					</div>
+		
+				</div>
+	  <label>Anything else?</label>
+				<textarea id="messagetextarea" rows="4" placeholder="Tell us anything that might be important"></textarea>
+	  <a href="thankyou.html" class="bookingsendbuttontext">Send</a>
+	</div>
+  <div class="booking-right">
+    <div class="elem-group inlined">
+      <label for="checkin-date">Check-in Date</label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">Check-out Date</label>
+      <input type="date" id="checkout-date" name="checkout" required>
+    </div>
+	  
+				
+  </div>
+	  </div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
